@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+npm run build
+npm run lint
+node --check app/site.js
+python3 - <<'PY'
+from pathlib import Path
+from html.parser import HTMLParser
+import json
+class Check(HTMLParser):
+ def __init__(self): super().__init__(); self.ids=set(); self.anchors=[]; self.assets=[]; self.h1=0
+ def handle_starttag(self,tag,attrs):
+  a=dict(attrs)
+  if 'id' in a: self.ids.add(a['id'])
+  if tag=='h1': self.h1+=1
+  if tag=='a':
+   href=a.get('href',''); assert href and href!='#', 'Empty link'
+   if href.startswith('#'): self.anchors.append(href[1:])
+  if tag=='img':
+   assert a.get('alt'), 'Missing image alt'; self.assets.append(a['src'])
+c=Check(); html=Path('dist/index.html').read_text(); c.feed(html)
+assert c.h1==1
+assert all(x in c.ids for x in c.anchors), 'Missing anchor target'
+for p in c.assets: assert (Path('dist')/p.removeprefix('./').lstrip('/')).is_file(),p
+for s in ['+79275387474','138048104778','344345855350','326344300082408','08:30','18:30','14:30','рассрочка']:
+ assert s in html,s
+print(f'PASS: {len(c.assets)} image references, {len(c.anchors)} anchor links, business facts, static build, JavaScript syntax')
+PY
