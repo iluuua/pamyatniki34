@@ -1,0 +1,13 @@
+{
+  "site": "https://iluuua.github.io/pamyatniki34/",
+  "repository": "https://github.com/iluuua/pamyatniki34",
+  "pages_branch": "gh-pages",
+  "deployed_sha": "4f88f8d910078aeb9280b44925b4b75ec6ba868d",
+  "source_implementation_sha": "1365d28",
+  "http_status": 200,
+  "html_css_js_images_fonts_match": true,
+  "validator": "passed",
+  "authored_lint": "passed",
+  "browser_ui_qa": "not_requested_not_run",
+  "baseline_dependency_advisories": 11
+}

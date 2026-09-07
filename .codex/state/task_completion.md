@@ -9,3 +9,5 @@ Dependencies: generated Sites starter retains its catalog and pinned dependency 
 Docs/index/backlog in control-plane are unrelated and left unchanged. This task uses its own README, state and completion artifact. No other existing project files modified.
 
 Owner next step: review published appearance and confirm business copy/photos; a custom domain can be connected separately. GitHub Pages URL remains active until disabled; no automatic expiry configured.
+
+Published: https://iluuua.github.io/pamyatniki34/ — HTTP 200, exact build/assets verified including seven font files. GitHub Pages source gh-pages@4f88f8d910078aeb9280b44925b4b75ec6ba868d. Repository https://github.com/iluuua/pamyatniki34. No publication blockers.

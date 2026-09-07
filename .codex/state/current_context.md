@@ -1,8 +1,10 @@
-Objective: publish completed memorial workshop website to GitHub Pages.
-Verified: static production build, business details, images and anchor links, Yandex short URL matches organization 138048104778; local preview HTTP 200.
-Root cause: not a bugfix; MiMo transport failed three times. User explicitly prohibited further MiMo use; all implementation completed directly.
-Files: index.html, app/globals.css, app/site.js, public photos/fonts/favicon, Vite config, package scripts, README, validator and task docs.
-Instructions: user global agreement; Sites scaffold/design; milestone-summarizer. GitHub publication explicitly requested.
-Validation: targeted lint + .codex/test-command required before publication. Browser UI testing not requested and not run under Sites environment instructions.
-Risks: scaffold dependency audit reports 11 advisories; only static HTML/CSS/JS/assets deployed, no scaffold server runtime. Unused vendored Shadcn files have baseline lint findings; authored source lint scoped explicitly.
-Next: create iluuua/pamyatniki34, push source and static gh-pages branch, enable Pages and verify published resources.
+Objective: completed website publication for memorial workshop in Volgograd.
+Verified: https://iluuua.github.io/pamyatniki34/ returns HTTP 200; HTML, CSS, JS, all images and seven fonts match local build.
+Repository: https://github.com/iluuua/pamyatniki34; local projects/pamyatniki34; source branch site/initial.
+Deployment: gh-pages@4f88f8d910078aeb9280b44925b4b75ec6ba868d; implementation commit 1365d28.
+Validation: .codex/test-command and authored-source lint passed; Yandex short URL matches embedded organization.
+Root cause: not applicable, new site; user prohibits MiMo.
+Files: static site, supplied photos, licensed fonts, scaffold/config, README, validator and delivery artifacts.
+Remaining blockers: none for publication.
+Risks: 11 baseline scaffold dependency advisories; published site contains only static output. Browser UI QA not requested/run.
+Next: owner reviews published content and appearance; custom domain is a separate optional task.
