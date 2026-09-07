@@ -22,6 +22,15 @@ c=Check(); html=Path('dist/index.html').read_text(); c.feed(html)
 assert c.h1==1
 assert all(x in c.ids for x in c.anchors), 'Missing anchor target'
 for p in c.assets: assert (Path('dist')/p.removeprefix('./').lstrip('/')).is_file(),p
+assert '<title>Мастерская памятников в Волгограде</title>' in html
+assert 'sms:' not in html
+assert 'Принадлежности из камня' not in html
+assert '01 / Детали, которые важны' not in html
+assert 'Уборка мест захоронения' in html
+assert 'Стоимость по вашему проекту' in html
+assert 'Nadezhda_graver?text=' in html
+assert 'https://max.ru/:share?text=' in html
+assert '↗' not in html
 for s in ['+79275387474','138048104778','344345855350','326344300082408','08:30','18:30','14:30','рассрочка']:
  assert s in html,s
 print(f'PASS: {len(c.assets)} image references, {len(c.anchors)} anchor links, business facts, static build, JavaScript syntax')

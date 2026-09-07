@@ -1,0 +1,20 @@
+
+> pamyatniki34@0.1.0 build
+> vite build
+
+vite v8.0.13 building client environment for production...
+[2Ktransforming...
+./fonts/fonts.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
+✓ 5 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                 19.52 kB │ gzip: 5.26 kB
+dist/assets/index-0dgbxbTB.css  17.50 kB │ gzip: 4.45 kB
+dist/assets/index-CKEHU5Mg.js    2.99 kB │ gzip: 1.31 kB
+
+✓ built in 250ms
+
+> pamyatniki34@0.1.0 lint
+> oxlint app/site.js vite.config.ts
+
+PASS: 9 image references, 13 anchor links, business facts, static build, JavaScript syntax
