@@ -1,13 +1,19 @@
 {
   "site": "https://iluuua.github.io/pamyatniki34/",
-  "repository": "https://github.com/iluuua/pamyatniki34",
-  "pages_branch": "gh-pages",
-  "deployed_sha": "4f88f8d910078aeb9280b44925b4b75ec6ba868d",
-  "source_implementation_sha": "1365d28",
+  "source_implementation_sha": "0c395c8b37a2cb86cf802abc039275b5b155f0a0",
+  "deployed_sha": "053505d47faa651a43c703bd6cf7236f0406b6af",
   "http_status": 200,
-  "html_css_js_images_fonts_match": true,
+  "exact_assets_verified": 27,
   "validator": "passed",
-  "authored_lint": "passed",
-  "browser_ui_qa": "not_requested_not_run",
-  "baseline_dependency_advisories": 11
+  "browser_widths_passed": [
+    320,
+    390,
+    430,
+    768,
+    1440
+  ],
+  "console_errors": 0,
+  "max_direct_chat": "requires exported profile URL; phone-search/share fallback implemented",
+  "telegram": "Nadezhda_graver with draft",
+  "sms_links": 0
 }

@@ -13,3 +13,5 @@ MAX: user supplied phone +79275387474, no exported profile URL. Official https:/
 Transfer: original JPEG set 2861087 bytes; mobile 480px WebP set 356304 bytes; desktop 960px set 1074868 bytes. Seven WOFF2 files total 314204 bytes. Actual responsive transfer varies by screen density. Existing scaffold advisories from initial delivery remain outside this scoped update.
 
 Other project/index/backlog docs intentionally unchanged; this local task artifact and current_context cover the modified truth. Owner next step: review updated public site; provide MAX exported profile link to replace phone-search fallback with direct chat.
+
+Published verification: HTTP 200; HTML and 27 linked assets exactly match validated build. Source 0c395c8b37a2cb86cf802abc039275b5b155f0a0; deployed 053505d47faa651a43c703bd6cf7236f0406b6af.
