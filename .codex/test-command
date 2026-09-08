@@ -23,6 +23,15 @@ assert c.h1==1
 assert all(x in c.ids for x in c.anchors), 'Missing anchor target'
 for p in c.assets: assert (Path('dist')/p.removeprefix('./').lstrip('/')).is_file(),p
 assert '<title>Мастерская памятников в Волгограде</title>' in html
+assert 'href="#max-contact"' not in html
+from urllib.parse import urlparse, parse_qs
+class CTA(HTMLParser):
+ def handle_starttag(self,tag,attrs):
+  a=dict(attrs)
+  if tag=='a' and 'messenger-cta' in a.get('class',''):
+   u=urlparse(a['href']);assert u.netloc=='t.me' and u.path=='/Nadezhda_graver'
+   assert parse_qs(u.query)['text']==['Здравствуйте, хочу обсудить установку памятника.']
+CTA().feed(html)
 assert 'sms:' not in html
 assert 'Принадлежности из камня' not in html
 assert '01 / Детали, которые важны' not in html

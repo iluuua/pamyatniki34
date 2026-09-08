@@ -26,14 +26,6 @@ for (const image of document.querySelectorAll('img')) {
   else image.addEventListener('load', showImage, { once: true });
 }
 
-for (const link of document.querySelectorAll('.max-cta')) {
-  link.addEventListener('click', () => {
-    document.querySelector('#max-contact').open = true;
-  });
-}
-if (window.location.hash === '#max-contact') {
-  document.querySelector('#max-contact').open = true;
-}
 for (const button of document.querySelectorAll('[data-copy]')) {
   button.addEventListener('click', async () => {
     const status = document.querySelector('.copy-status');
