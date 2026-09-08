@@ -29,18 +29,24 @@ class CTA(HTMLParser):
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if tag=='a' and 'messenger-cta' in a.get('class',''):
+   u=urlparse(a['href']);assert u.netloc=='web.max.ru' and u.path=='/'
+   assert not u.query
+  if tag=='a' and 'telegram-link' in a.get('class',''):
    u=urlparse(a['href']);assert u.netloc=='t.me' and u.path=='/Nadezhda_graver'
    assert parse_qs(u.query)['text']==['Здравствуйте, хочу обсудить установку памятника.']
 CTA().feed(html)
+assert '08:30' not in html and '18:30' not in html and '14:30' not in html
+assert html.count('aria-label="5 из 5 звёзд"') == 2
 assert 'sms:' not in html
 assert 'Принадлежности из камня' not in html
 assert '01 / Детали, которые важны' not in html
 assert 'Уборка мест захоронения' in html
 assert 'Стоимость по вашему проекту' in html
 assert 'Nadezhda_graver?text=' in html
-assert 'https://max.ru/:share?text=' in html
+assert 'https://web.max.ru/' in html
+assert 'max-contact' not in html
 assert '↗' not in html
-for s in ['+79275387474','138048104778','344345855350','326344300082408','08:30','18:30','14:30','рассрочка']:
+for s in ['+79275387474','138048104778','09:00','18:00','25','Своё производство','QR-код','Татаринова','Евгений Суров','рассрочка']:
  assert s in html,s
 print(f'PASS: {len(c.assets)} image references, {len(c.anchors)} anchor links, business facts, static build, JavaScript syntax')
 PY

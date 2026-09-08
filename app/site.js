@@ -26,18 +26,6 @@ for (const image of document.querySelectorAll('img')) {
   else image.addEventListener('load', showImage, { once: true });
 }
 
-for (const button of document.querySelectorAll('[data-copy]')) {
-  button.addEventListener('click', async () => {
-    const status = document.querySelector('.copy-status');
-    try {
-      await navigator.clipboard.writeText(button.dataset.copy);
-      status.textContent = 'Номер скопирован. Вставьте его в поиск MAX.';
-    } catch {
-      status.textContent = 'Скопируйте номер вручную: +7 927 538-74-74.';
-    }
-  });
-}
-
 const viewer = document.querySelector('.photo-viewer');
 const viewerContent = viewer.querySelector('.photo-viewer-content');
 const closePhoto = () => viewer.close();

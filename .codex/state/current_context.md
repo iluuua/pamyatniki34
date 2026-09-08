@@ -1,8 +1,10 @@
-Objective: replace all estimate CTA anchor jumps with direct messenger chats.
-Root cause: previous MAX buttons targeted #max-contact and opened contact instructions.
-Changed: five estimate links now target Telegram @Nadezhda_graver with exact requested draft; labels accurately name Telegram. Removed obsolete anchor handler.
-Verified: canonical validator checks target username and decoded draft on each primary CTA; build and authored lint pass.
-Files: index.html, app/site.js, validator and task records.
-MAX blocker: direct business chat requires exported profile URL; number alone is insufficient. User asked to supply it; remaining MAX share option is explicitly labeled.
-Published: gh-pages@edb1d4aca21584e26fc1da18ae004b283c95bf4a; live HTML/JS match build; five CTA targets and exact draft verified.
-Next: owner supplies MAX profile URL for direct MAX chat; otherwise direct Telegram CTA is active.
+Objective: publish owner business facts, two testimonials, MAX-first CTA and minimal footer.
+Facts: own production in Krasnoarmeysky; customer visits/sample viewing at Angarskaya 104; 25 years; QR/card/cash/bank transfer; displayed hours 09:00–18:00.
+Reviews: Tatarinova correspondence and Evgeniy Surov Yandex review transcribed from user screenshots, five stars each per user, no avatars.
+CTA: primary MAX opens https://web.max.ru/ without query/message; secondary Telegram @Nadezhda_graver includes exact draft.
+Footer: exactly two messenger buttons and phone; removed legal/brand text and MAX search instructions as requested.
+Root cause: content update, no bug investigation needed; MiMo prohibited.
+Verified: canonical validator, authored lint; 390px browser no overflow, two reviews/10 vector stars, exact footer text.
+Changed: index.html, CSS, removed copy-number JS, validator and scoped task docs.
+Limitation: MAX opens messenger, not a specific recipient; direct profile URL has not been supplied. Telegram opens designated chat.
+Next: publish gh-pages and verify live HTML/assets/CTA data.
