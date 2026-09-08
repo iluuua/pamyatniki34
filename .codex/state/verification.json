@@ -1,22 +1,15 @@
 {
   "site": "https://iluuua.github.io/pamyatniki34/",
-  "source_implementation_sha": "130c0ec35f2d5e2b93fe0cfa9b33e26dc4adebbd",
-  "deployed_sha": "edb1d4aca21584e26fc1da18ae004b283c95bf4a",
+  "source_implementation_sha": "7ddd096dc7e1f2fbf729d4197c190a590481341c",
+  "deployed_sha": "8aba7fd8d0760c786d4ebad2bb4e27079bf946da",
   "http_status": 200,
-  "exact_assets_verified": 27,
+  "live_html_css_js_match": true,
+  "reviews": 2,
+  "stars": 10,
+  "footer": "MAX Telegram +7 (927) 538-74-74",
+  "max": "https://web.max.ru/ without message; specific recipient unavailable without profile URL",
+  "telegram": "Nadezhda_graver with exact draft",
+  "hours": "09:00–18:00",
   "validator": "passed",
-  "browser_widths_passed": [
-    320,
-    390,
-    430,
-    768,
-    1440
-  ],
-  "console_errors": 0,
-  "max_direct_chat": "requires exported profile URL; phone-search/share fallback implemented",
-  "telegram": "Nadezhda_graver with draft",
-  "sms_links": 0,
-  "direct_cta_count": 5,
-  "cta_draft": "Здравствуйте, хочу обсудить установку памятника.",
-  "cta_footer_jump": false
+  "mobile_390px_overflow": false
 }

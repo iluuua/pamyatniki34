@@ -9,3 +9,5 @@ User steering supersedes earlier Telegram-primary flow: five primary CTA buttons
 Verification: .codex/test-command checks business facts, removed times, review ratings and updated CTA semantics. Build/lint pass. Browser at 390px shows no horizontal overflow, two reviews, ten vector stars and exact three-item footer. External MAX web endpoint returned HTTP 200. No chat message sent.
 
 Scope: HTML/CSS/JS, targeted validator and these task records. Unrelated project docs/indexes unchanged. Owner next step: review content; supply MAX profile link if direct recipient navigation is required. Existing initial dependency advisories unchanged.
+
+Published 8aba7fd8d0760c786d4ebad2bb4e27079bf946da; exact live HTML/CSS/JS match. Two reviews and ten stars, footer contents and messenger query parameters verified.

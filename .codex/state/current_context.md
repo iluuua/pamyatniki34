@@ -7,4 +7,5 @@ Root cause: content update, no bug investigation needed; MiMo prohibited.
 Verified: canonical validator, authored lint; 390px browser no overflow, two reviews/10 vector stars, exact footer text.
 Changed: index.html, CSS, removed copy-number JS, validator and scoped task docs.
 Limitation: MAX opens messenger, not a specific recipient; direct profile URL has not been supplied. Telegram opens designated chat.
-Next: publish gh-pages and verify live HTML/assets/CTA data.
+Published: 8aba7fd8d0760c786d4ebad2bb4e27079bf946da; live HTML/CSS/JS, reviews, footer and messenger link parameters verified.
+Next: owner reviews site; specific MAX recipient still requires profile URL.
