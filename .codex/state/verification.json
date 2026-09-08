@@ -1,7 +1,7 @@
 {
   "site": "https://iluuua.github.io/pamyatniki34/",
-  "source_implementation_sha": "0c395c8b37a2cb86cf802abc039275b5b155f0a0",
-  "deployed_sha": "053505d47faa651a43c703bd6cf7236f0406b6af",
+  "source_implementation_sha": "130c0ec35f2d5e2b93fe0cfa9b33e26dc4adebbd",
+  "deployed_sha": "edb1d4aca21584e26fc1da18ae004b283c95bf4a",
   "http_status": 200,
   "exact_assets_verified": 27,
   "validator": "passed",
@@ -15,5 +15,8 @@
   "console_errors": 0,
   "max_direct_chat": "requires exported profile URL; phone-search/share fallback implemented",
   "telegram": "Nadezhda_graver with draft",
-  "sms_links": 0
+  "sms_links": 0,
+  "direct_cta_count": 5,
+  "cta_draft": "Здравствуйте, хочу обсудить установку памятника.",
+  "cta_footer_jump": false
 }
