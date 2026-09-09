@@ -1,15 +1,18 @@
 {
-  "site": "https://iluuua.github.io/pamyatniki34/",
-  "source_implementation_sha": "7ddd096dc7e1f2fbf729d4197c190a590481341c",
-  "deployed_sha": "8aba7fd8d0760c786d4ebad2bb4e27079bf946da",
+  "site": "https://pamyatniki34.ru/",
+  "source_implementation_sha": "ac59b15",
+  "deployed_release": "ac59b15",
   "http_status": 200,
   "live_html_css_js_match": true,
   "reviews": 2,
   "stars": 10,
   "footer": "MAX Telegram +7 (927) 538-74-74",
-  "max": "https://web.max.ru/ without message; specific recipient unavailable without profile URL",
+  "max": "https://max.ru/u/f9LHodD0cOKDGt_jjh26fJzb10jy5HNpTv4QwadNBBOiDXziSNCV3Mfv2G4",
   "telegram": "Nadezhda_graver with exact draft",
   "hours": "09:00–18:00",
   "validator": "passed",
-  "mobile_390px_overflow": false
+  "mobile_390px_overflow": false,
+  "dns": "apex and www -> 77.91.115.169",
+  "https": "valid through 2026-12-08; renewal dry-run passed",
+  "seo": "canonical, Open Graph, Twitter Card, LocalBusiness JSON-LD, robots.txt, sitemap.xml"
 }

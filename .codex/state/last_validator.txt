@@ -12,7 +12,7 @@ dist/index.html                 26.69 kB │ gzip: 6.12 kB
 dist/assets/index-aPO-OTVW.css  20.39 kB │ gzip: 5.00 kB
 dist/assets/index-Cdahuw4n.js    2.40 kB │ gzip: 1.06 kB
 
-✓ built in 332ms
+✓ built in 279ms
 
 > pamyatniki34@0.1.0 lint
 > oxlint app/site.js vite.config.ts

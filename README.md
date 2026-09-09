@@ -12,17 +12,17 @@ Node.js 22.13+; `npm ci`, `npm run dev`. Проверка: `./.codex/test-comman
 
 ## Публикация
 
-GitHub Pages обслуживает статические файлы ветки `gh-pages`. Исходники — ветка `site/initial`.
-Для обновления сначала выполните валидатор, затем опубликуйте содержимое `dist` в `gh-pages` обычным коммитом без force-push.
+Основной сайт работает на VPS из `/var/www/pamyatniki34/current`; конфигурация Nginx хранится в `deploy/nginx.conf`. Исходники — ветка `site/initial`.
+GitHub Pages из ветки `gh-pages` остаётся временной копией.
 Карты загружаются из Яндекса; на случай недоступности есть прямая ссылка и текстовый адрес.
 Основные кнопки открывают профиль мастерской в MAX без текста сообщения. Telegram открывает чат с подготовленным сообщением; телефон — звонок. Формы и сервер для сбора персональных данных отсутствуют.
 
-Сайт: https://iluuua.github.io/pamyatniki34/
+Сайт: https://pamyatniki34.ru/
+Временная копия: https://iluuua.github.io/pamyatniki34/
 Репозиторий: https://github.com/iluuua/pamyatniki34
 
 ## VPS и домен
 
-Целевой домен: `pamyatniki34.ru`, DNS — REG.RU. VPS: `77.91.115.169`.
-Подготовлена HTTP-конфигурация `deploy/nginx-http.conf`; на сервер пока не установлена.
-Публикация на VPS и HTTPS ожидают доступа: сервер отклоняет SSH-ключ `pamyatniki` для root.
-После восстановления доступа: загрузить сборку в `/var/www/pamyatniki34/current`, проверить Nginx, изменить A-записи `@` и `www` на IP VPS и выпустить сертификат для обоих имён.
+DNS обслуживает REG.RU: A-записи `@` и `www` направлены на VPS `77.91.115.169`.
+HTTP и `www` перенаправляются на `https://pamyatniki34.ru/`. Сертификат Let's Encrypt выпущен для обоих имён, продление выполняет `certbot.timer`.
+Базовое SEO: canonical, Open Graph, Twitter Card, LocalBusiness JSON-LD, `robots.txt` и `sitemap.xml`.

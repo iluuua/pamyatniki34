@@ -1,12 +1,12 @@
-Objective: deploy pamyatniki34.ru to Hostkey VPS 77.91.115.169 with HTTPS.
+Objective: deploy pamyatniki34.ru with HTTPS and basic SEO; complete.
 Branch: site/initial; project: projects/pamyatniki34.
-Implemented: exact owner MAX profile URL on all primary links; Telegram draft unchanged.
-Verified: .codex/test-command passes build, authored lint, syntax, links and content.
-SSH: target reachable; root rejects matching pamyatniki private/public key (including en0).
-DNS: REG.RU ns1/ns2; apex and www still 95.163.244.138, unchanged.
-Hostkey panel requires login; asked owner to sign in.
-Prepared: deploy/nginx-http.conf; not installed, no remote mutations.
-Changed: index.html, validator/output, README, deploy config, scoped state docs.
-Blocker: authenticated VPS access; certificate cannot be issued before DNS/HTTP setup.
-Next: after Hostkey login, install/check authorized key, inspect VPS, upload static build, configure DNS and HTTPS.
-Preview: Pages 6794326 deployed successfully; live HTML equals dist, six correct MAX links.
+Deployed: Hostkey 77.91.115.169, /var/www/pamyatniki34/releases/ac59b15.
+DNS: REG.RU authoritative A @ and www both 77.91.115.169; external DoH confirms.
+HTTPS: Let's Encrypt covers apex and www, expires 2026-12-08; renewal dry-run passed.
+Routing: HTTP and www redirect to https://pamyatniki34.ru/.
+SEO: canonical, OG, Twitter Card, LocalBusiness JSON-LD, robots and sitemap.
+Verified: validator green; HTTPS body equals dist; robots/sitemap 200; Nginx active/config valid.
+Changed: index.html, public/robots.txt, public/sitemap.xml, validator, deploy/nginx.conf, docs.
+Preview: GitHub Pages 6794326 remains available; production is the canonical site.
+Blockers: none.
+Next: optional detailed SEO and webmaster registration are separate paid scope.
