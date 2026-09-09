@@ -23,6 +23,7 @@ GitHub Pages из ветки `gh-pages` остаётся временной ко
 
 ## VPS и домен
 
-DNS обслуживает REG.RU: A-записи `@` и `www` направлены на VPS `77.91.115.169`.
+Домен зарегистрирован в REG.RU. DNS обслуживает Cloudflare: записи `@` и `www` проксируются к VPS `77.91.115.169`.
 HTTP и `www` перенаправляются на `https://pamyatniki34.ru/`. Сертификат Let's Encrypt выпущен для обоих имён, продление выполняет `certbot.timer`.
 Базовое SEO: canonical, Open Graph, Twitter Card, LocalBusiness JSON-LD, `robots.txt` и `sitemap.xml`.
+Сайт подтверждён в Яндекс Вебмастере; sitemap и главная страница отправлены на обработку. Доменный ресурс Google Search Console подтверждается TXT-записью Cloudflare.

@@ -1,12 +1,12 @@
-Objective: deploy pamyatniki34.ru with HTTPS and basic SEO; complete.
+Objective: restore local access and start Yandex/Google indexing.
 Branch: site/initial; project: projects/pamyatniki34.
-Deployed: Hostkey 77.91.115.169, /var/www/pamyatniki34/releases/ac59b15.
-DNS: REG.RU authoritative A @ and www both 77.91.115.169; external DoH confirms.
-HTTPS: Let's Encrypt covers apex and www, expires 2026-12-08; renewal dry-run passed.
-Routing: HTTP and www redirect to https://pamyatniki34.ru/.
-SEO: canonical, OG, Twitter Card, LocalBusiness JSON-LD, robots and sitemap.
-Verified: validator green; HTTPS body equals dist; robots/sitemap 200; Nginx active/config valid.
-Changed: index.html, public/robots.txt, public/sitemap.xml, validator, deploy/nginx.conf, docs.
-Preview: GitHub Pages 6794326 remains available; production is the canonical site.
-Blockers: none.
-Next: optional detailed SEO and webmaster registration are separate paid scope.
+Root cause: macOS has a stale host route for 77.91.115.169 via old gateway 172.20.10.1.
+Fix: REG.RU nameservers changed to blair/cameron.ns.cloudflare.com; A records are proxied.
+Cloudflare: activation is pending registrar propagation; SSL mode is Full (strict).
+Yandex: ownership verified by TXT on 2026-09-09.
+Yandex: sitemap.xml queued; homepage queued for reindexing.
+Google: domain property created; verification TXT added to Cloudflare.
+Verified: external probes return HTTPS 200 with a valid certificate.
+Changed: DNS providers and webmaster registrations; no site runtime code changed.
+Blocker: public NS delegation still returns ns1/ns2.reg.ru until propagation completes.
+Next: confirm Cloudflare active, Google ownership, submit sitemap, and retest Chrome.

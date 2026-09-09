@@ -12,7 +12,10 @@
   "hours": "09:00–18:00",
   "validator": "passed",
   "mobile_390px_overflow": false,
-  "dns": "apex and www -> 77.91.115.169",
+  "dns": "REG.RU nameservers changed to Cloudflare; propagation pending",
   "https": "valid through 2026-12-08; renewal dry-run passed",
-  "seo": "canonical, Open Graph, Twitter Card, LocalBusiness JSON-LD, robots.txt, sitemap.xml"
+  "seo": "canonical, Open Graph, Twitter Card, LocalBusiness JSON-LD, robots.txt, sitemap.xml",
+  "cloudflare": "A apex/www proxied; Full (strict); activation pending",
+  "yandex_webmaster": "owner verified; sitemap and homepage reindex queued",
+  "google_search_console": "domain property created; verification TXT added; verification pending DNS delegation"
 }
