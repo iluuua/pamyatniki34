@@ -23,6 +23,12 @@ assert c.h1==1
 assert all(x in c.ids for x in c.anchors), 'Missing anchor target'
 for p in c.assets: assert (Path('dist')/p.removeprefix('./').lstrip('/')).is_file(),p
 assert '<title>Мастерская памятников в Волгограде</title>' in html
+assert '<link href="https://pamyatniki34.ru/" rel="canonical"/>' in html
+assert '<meta content="https://pamyatniki34.ru/" property="og:url"/>' in html
+assert '<meta content="summary_large_image" name="twitter:card"/>' in html
+assert '"url":"https://pamyatniki34.ru/"' in html
+assert Path('dist/robots.txt').read_text() == 'User-agent: *\nAllow: /\n\nSitemap: https://pamyatniki34.ru/sitemap.xml\n'
+assert '<loc>https://pamyatniki34.ru/</loc>' in Path('dist/sitemap.xml').read_text()
 assert 'href="#max-contact"' not in html
 from urllib.parse import urlparse, parse_qs
 class CTA(HTMLParser):
