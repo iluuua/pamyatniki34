@@ -9,3 +9,4 @@ Prepared: deploy/nginx-http.conf; not installed, no remote mutations.
 Changed: index.html, validator/output, README, deploy config, scoped state docs.
 Blocker: authenticated VPS access; certificate cannot be issued before DNS/HTTP setup.
 Next: after Hostkey login, install/check authorized key, inspect VPS, upload static build, configure DNS and HTTPS.
+Preview: Pages 6794326 deployed successfully; live HTML equals dist, six correct MAX links.
