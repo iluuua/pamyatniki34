@@ -29,7 +29,7 @@ class CTA(HTMLParser):
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if tag=='a' and 'messenger-cta' in a.get('class',''):
-   u=urlparse(a['href']);assert u.netloc=='web.max.ru' and u.path=='/'
+   u=urlparse(a['href']);assert u.netloc=='max.ru' and u.path=='/u/f9LHodD0cOKDGt_jjh26fJzb10jy5HNpTv4QwadNBBOiDXziSNCV3Mfv2G4'
    assert not u.query
   if tag=='a' and 'telegram-link' in a.get('class',''):
    u=urlparse(a['href']);assert u.netloc=='t.me' and u.path=='/Nadezhda_graver'
@@ -43,7 +43,7 @@ assert '01 / Детали, которые важны' not in html
 assert 'Уборка мест захоронения' in html
 assert 'Стоимость по вашему проекту' in html
 assert 'Nadezhda_graver?text=' in html
-assert 'https://web.max.ru/' in html
+assert 'https://max.ru/u/f9LHodD0cOKDGt_jjh26fJzb10jy5HNpTv4QwadNBBOiDXziSNCV3Mfv2G4' in html
 assert 'max-contact' not in html
 assert '↗' not in html
 for s in ['+79275387474','138048104778','09:00','18:00','25','Своё производство','QR-код','Татаринова','Евгений Суров','рассрочка']:
